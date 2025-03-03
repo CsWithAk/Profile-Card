@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amit Profile-card">
+  <meta name="Author" content="Amit Kumar">
+  <title>Amit Kumar</title>
+  <link rel="icon" type="image/png" href="ak logo.png">
+    <title>Profile Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #dff6ff;
+      }
+      .profile-card{
+        background: linear-gradient(45deg, #FF6E7F, #DCE35B);
+        width: 300px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+      }
+      .header{
+        height: 80px;
+        background: url('/back.jpg') no-repeat center/cover;
+      }
+      .profile-pic{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin-top: -50px;
+      }
+      h2{
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      p{
+        font-size: 14px;
+        color: gray;
+      }
+      .social-icons {
+        margin: 10px 0;
+      }
+      .social-icons a {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 20px;
+        color: #333;
+        transition: 0.3s;
+      }
+      .social-icons a:hover {
+        color: #007bff;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 15px 0;
+      }
+      .buttons button {
+        padding: 8px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .subscribe {
+        background: #e91e63;
+        color: white;
+      }
+      .subscribe:hover {
+        background: lawngreen;
+        color: darkgray;
+      }
+      .message {
+        background: #f06292;
+        color: white;
+      }
+      .message:hover{
+        background: lightyellow;
+        color: rosybrown;
+      }
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        font-size: 14px;
+      }
+      span{
+        color: green;
+      }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+      <div class="header"></div>
+      <img src="/profile.jpg" alt="Profile" class="profile-pic">
+      <h2>AMIT KUMAR</h2>
+      <p>Youtuber & Developer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="buttons">
+        <button id="subscribe" class="subscribe">Subscribe</button>
+        <button id="message" onclick="message()" class="message">Message</button>
+      </div>
+      <div class="stats">
+        <span>&#x2665; 100k</span>
+        <span>&#x1F4AC; 100k</span>
+        <span>&#x1F517; 100k</span>
+      </div>
+    </div>
+    <!--
+    <script>
+      document.getElementById('subscribe').addEventListener('click', function() {
+  window.open("https://youtube.com/@amit_0_prajapati?si=IFFxyuFL7UeZRmhb", "_blank");
+  this.textContent = 'Subscribed';
+  this.style.background = "gray"; // Change color to indicate it's subscribed
+  this.style.cursor = "not-allowed";
+});
+
+document.querySelector('.message').addEventListener('click', function() {
+  window.open("https://www.instagram.com/direct/t/amit_0_prajapati", "_blank");
+});
+
+    </script>
+    
+    -->
+    
+    
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById('subscribe').addEventListener('click', function() {
+    window.open("https://youtube.com/@cswitak?si=IFFxyuFL7UeZRmhb", "_blank");
+    this.textContent = 'Subscribed';
+    this.style.background = "gray"; // Change color to indicate it's subscribed
+    this.style.cursor = "not-allowed";
+  });
+
+ /* document.querySelector('.message').addEventListener('click', function() {
+    window.open("https://www.instagram.com/direct/t/amit_0_prajapati", "_blank");
+  });*/
+  document.getElementById('message').addEventListener('click', function() {
+    window.open("https://cswithak.github.io/Email-Contact-A_K/", "_blank");
+  });
+});
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+   <!-- <script src="main.js"></script>-->
+</body>
+</html>
